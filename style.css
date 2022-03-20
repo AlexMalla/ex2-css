@@ -1,0 +1,29 @@
+body {
+  display: block;
+}
+
+.span3:focus ~ .alert {
+  display: none;
+}
+.span2:focus ~ .alert {
+  display: block;
+}
+
+.alert {
+  color: green;
+}
+
+.span2,
+.span3 {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 12px;
+  background-color: #ff8888;
+  border: 1px solid;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.span2 {
+  color: #88ff88;
+}
